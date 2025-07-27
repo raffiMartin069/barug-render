@@ -13,15 +13,15 @@ jobs:
     environment: Deployment
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_URL }}
-      SENDGRID_API_KEY: ${{ secrets.SUPABASE_URL }}
-      EMAIL_BACKEND: ${{ secrets.SUPABASE_URL }}
-      EMAIL_HOST: ${{ secrets.SUPABASE_URL }}
-      EMAIL_PORT: ${{ secrets.SUPABASE_URL }}
-      EMAIL_USE_TLS: ${{ secrets.SUPABASE_URL }}
-      EMAIL_HOST_USER: ${{ secrets.SUPABASE_URL }}
-      EMAIL_HOST_PASSWORD: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+      EMAIL_BACKEND: ${{ secrets.EMAIL_BACKEND }}
+      EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+      EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+      EMAIL_USE_TLS: ${{ secrets.EMAIL_USE_TLS }}
+      EMAIL_HOST_USER: ${{ secrets.EMAIL_HOST_USER }}
+      EMAIL_HOST_PASSWORD: ${{ secrets.EMAIL_HOST_PASSWORD }}
     strategy:
       max-parallel: 4
       matrix:
